@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum, Instruction, and Grants</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+    @charset "UTF-8";
+/* Color Palette Used: https://sites.google.com/walpole.k12.ma.us/wps-style-guide/home */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', Arial;
+    background-color: #042350;
+  }
+  
+  /* Style the header */
+.header {
+    grid-area: header;
+    background-color: #042350;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Signika Negative', 'Open Sans', Arial;
+    color: #F65C02; 
+    }
+
+h2 {
+    color: #F65C02;
+    font-family: 'Signika Negative', 'Open Sans', Arial;
+    }
+  
+h3 {
+    color: #F65C02;
+    font-family: 'Signika Negative', 'Open Sans', Arial;
+    }
+
+h5 {
+    color: #F65C02;
+    }
+
+p {
+    color: #01256F;
+    }
+
+ul {
+    color: #01256F;
+    }
+
+/* Style the links within grid */
+a:link {
+  color: #01256F;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #01256F;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F65C02;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Style the nav and its links */
+nav, footer {
+  font-family: 'Signika Negative', 'Open Sans', Arial;
+  background-color: #042350;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: #F65C02;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #F65C02;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+   font-size: .45em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+nav ul a {
+  display: block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+}
+
+  /* Style the grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+    grid-column-gap: 10px; 
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+  }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #042350;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+    </style>
+</head>
+<body>
+
+
+<!--Header and Nav Section-->
+<div class="grid-container">
+  <div class="header">
+    <h2>Walpole Public Schools</h2>
+    <nav>
+      <ul>
+        <li><a href="https://www.walpole.k12.ma.us/">Wapole Public Schools</a></li>
+        <li><a href="https://www.walpole.k12.ma.us/">Departments</a></li>
+        <li><a href="https://www.walpole.k12.ma.us/page/curriculum-instruction-office">Curriculum and Instruction</a></li>
+      </ul>
+    </nav>  
+  </div>
+  
+  <!--Code the left column section-->
+  <div class="left" style="background-color:#ffff;">
+    <h2>Documents and Resources</h2>
+        <ul>
+            <li><a href="https://www.walpole.k12.ma.us/o/wps/page/curriculum-summaries">Curriculum Summaries</a></li>
+            <li><a href="https://drive.google.com/file/d/1W0xdbBAXA7rBk6CbwXDgxgZy27XJu2Pk/view?usp=share_link">Curriculum Six-year Review Cycle;</a></li>
+            <li><a href="https://5il.co/1w4es">District Curriculum Acconmmodation Plan (DCAP)</a></li>
+            <li><a href="https://www.walpole.k12.ma.us/o/wps/page/home-education">Home Education</a></li>
+            <li><a href="https://www.walpole.k12.ma.us/page/mcas">MCAS</a></li>
+            <li><a href="https://sites.google.com/walpole.k12.ma.us/professional-development/home">Professional Development</a></li>
+            <li><a href="https://sites.google.com/walpole.k12.ma.us/wps-sbrc/home">Report Card Format Information</a></li>
+            <li><a href="https://www.walpole.k12.ma.us/page/title-1">Title 1 Program</a></li>
+        </ul>
+        <img src="images/tim.jpg" alt="Timberwolf" height="225px">
+    </div>
+
+  <!--Code the middle column section-->
+  <div class="middle" style="background-color:#ffff;">
+    <h2>Office of Curriculum, Instruction and Grants</h2>
+    <p>The Walpole Public Schools strives to be a diverse learning community that empowers students and staff to maximize their full potential. Our professional and caring staff is committed to providing a rigorous education to ensure our students reach their own level of excellence. Through a collaborative partnership with community and families, Walpole Public Schools educates all our students to become responsible citizens and life-long learners.</p>
+    <p>To reach these goals, the Walpole Public Schools provides students with the tools they need to succeed in a complex global society. We challenge every student to master a rigorous curriculum taught by highly qualified, enthusiastic, and inspirational educators. We embrace innovation and technology, and we provide the facilities to support learning.</p>
+    <p>Our students have the 21st century skills that enable them to be effective communicators, critical and creative thinkers, and problem-solvers. The Walpole Public Schools is a positive and safe learning environment where students’ well-being and success are valued. We are committed to maintaining our role as a leader in public education at the local, state, and national level.</p>
+        <p><b>William R. Hahn, Ed.D.</p>
+        <p>Assistant Superintendent of Curriculum, Instruction and Grants</b></p>
+        <p>whahn@walpole.k12.ma.us</p>
+    </div>  
+
+  <!--Code the footer section-->
+  <div class="footer">
+    <p style="color: #ffff">All content copyright &copy; Amelia D. Web Design. 2023, Walpole High School</p>
+  </div>
+</div>
+
+</body>
+</html>
